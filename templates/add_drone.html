@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+<article class="my-3" id="validation">
+    <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Add Drone</h3>
+    </div>
+
+    <div>
+        <div class="bd-example">
+            <form class="row g-3 was-validated" method="post" >
+                <div class="col-md-4">
+                    <label for="validationServerUsername" class="form-label">ID</label>
+                    <div class="input-group has-validation">
+                        <input type="text" class="form-control is-invalid" name="id" id="validationServerUsername"
+                               aria-describedby="inputGroupPrepend3" required>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationServer01" class="form-label">Tag</label>
+                    <input type="text" class="form-control is-invalid" name="tag" id="validationServer01" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationServer02" class="form-label">Fuel</label>
+                    <input type="text" class="form-control is-invalid" name="fuel" id="validationServer02" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationServer02" class="form-label">Capacity</label>
+                    <input type="text" class="form-control is-invalid" name="capacity" id="validationServer02" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationServer02" class="form-label">Sales</label>
+                    <input type="text" class="form-control is-invalid" name="sales" id="validationServer02" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationServer02" class="form-label">Flown by</label>
+                    <input type="text" class="form-control is-invalid" name="flown_by" id="validationServer02" required>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" name="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</article>
+    </main>
+{% endblock %}

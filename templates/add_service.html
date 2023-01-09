@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+<article class="my-3" id="validation">
+    <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Add Service</h3>
+    </div>
+
+    <div>
+        <div class="bd-example">
+            <form class="row g-3 was-validated" method="post" >
+
+                <div class="col-md-4">
+                    <label for="validationServer01" class="form-label">Service ID</label>
+                    <input type="text" class="form-control is-invalid" name="id" id="validationServer01" required>
+                </div>
+
+                 <div class="col-md-4">
+                    <label for="validationServer02" class="form-label">Long name</label>
+                    <input type="text" class="form-control is-invalid" name="long_name" id="validationServer02" required>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationServer03" class="form-label">Home Base</label>
+                    <input type="text" class="form-control is-invalid" name="home_base" id="validationServer03" required>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationServer04" class="form-label">Manager</label>
+                    <input type="text" class="form-control is-invalid" name="manager" id="validationServer04" required>
+                </div>
+
+                <div class="col-12">
+                    <button class="btn btn-primary" name="submit" type="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</article>
+    </main>
+{% endblock %}
